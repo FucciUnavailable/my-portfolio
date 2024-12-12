@@ -21,20 +21,20 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Reading
+              <ImPointRight /> Reading (Favorite books range from Dostoevsky to Cervantes and then back to Toni Morrison)
             </li>
             <li className="about-activity">
-              <ImPointRight /> Fixing things
+              <ImPointRight /> Fixing things (I get unlogically excited at the though of having a Green light to take something apart in order to fix it)
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Travelling (I have lived across 3 continents and feel an enthralling urge to discover both city and nature.)
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
             "Nothing is as permanent as a temporary solution that works"{" "}
           </p>
-          <footer className="blockquote-footer">Fucci and Milton Friedman</footer>
+          <footer className="blockquote-footer">Reddit probably</footer>
         </blockquote>
       </Card.Body>
     </Card>
