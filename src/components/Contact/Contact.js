@@ -51,7 +51,7 @@ function Contact() {
             {!submitted ? (
               <>
                 <h2>Send Me a Message</h2>
-                <Form name="contact" action="https://getform.io/f/aqoowkxa"   method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                <Form name="contact" action="https://getform.io/f/aqoowkxa"   method="POST" onSubmit={handleSubmit}>
                   <input type="hidden" name="form-name" value="contact" />
                   <Form.Group controlId="formName">
                     <Form.Label>Name</Form.Label>
