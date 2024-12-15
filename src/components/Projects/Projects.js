@@ -26,7 +26,7 @@ function Projects() {
               imgPath={katze}
               isBlog={false}
               title="Katze"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends built with, PUG, Express, Passport, Socket.IO and MongoDB."
+              description="Personal Chat Room or Workspace to share resources and hangout with friends built with, PUG, Express, Passport, Socket.IO, Redis and MongoDB."
               ghLink="https://github.com/FucciUnavailable/Chat-App"
               demoLink="https://chat-app-y4bw.onrender.com/"
             />

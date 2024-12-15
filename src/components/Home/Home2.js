@@ -35,7 +35,7 @@ function Home2() {
               <br />
               <br />
               I also enjoy working with technologies like{" "}
-              <b className="purple">Node.js, React.js, Cloud Systems, PSQL and MongoDB</b>, and I’m exploring areas like{" "}
+              <b className="purple">Node.js, React.js, Cloud Systems, PSQL, Redis and MongoDB</b>, and I’m exploring areas like{" "}
               <b className="purple">Docker, Linux, and system design.</b>
               <br />
               <br />
