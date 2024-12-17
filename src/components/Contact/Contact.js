@@ -52,7 +52,7 @@ function Contact() {
               <>
                 <h2>Send Me a Message</h2>
                 <Form name="contact" action="https://getform.io/f/aqoowkxa" method="POST" onSubmit={handleSubmit}>
-  <input type="hidden" name="form-name" value="contact" />
+  <input type="hidden" name="personal-portfolio" value="contact" />
   
   <Form.Group controlId="formName">
     <Form.Label>Name</Form.Label>
