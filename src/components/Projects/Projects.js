@@ -6,6 +6,7 @@ import game from "../../Assets/Projects/game.png";
 import katze from "../../Assets/Projects/katze.png";
 import proxishop from "../../Assets/Projects/proxishop.png";
 import d3 from "../../Assets/Projects/d3.png";
+import converter from "../../Assets/Projects/converter.png";
 
 
 
@@ -61,6 +62,16 @@ function Projects() {
               description="A bundle of projects I made using D3 to handle Data including, A Choropelth map chart, A bar chart, A Heat Map, A tree map and A Scatterplot graph."
               ghLink="https://codepen.io/collection/adMMyp"
               demoLink="https://codepen.io/collection/adMMyp"              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={converter}
+              isBlog={false}
+              title="Metric/Imperial converter"
+              description="This Metric Converter project allows users to easily convert between different units of measurement, such as length (miles to kilometers), volume (gallons to liters), weight (pounds to kilograms), and more. The application provides both a simple user interface for manual conversion and an API endpoint that handles conversion requests programmatically."
+              ghLink="https://github.com/FucciUnavailable/metric-converter-chai"
+              demoLink="https://metric-imperial-converter.freecodecamp.rocks/"              
             />
           </Col>
         </Row>

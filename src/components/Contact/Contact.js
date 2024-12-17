@@ -51,27 +51,45 @@ function Contact() {
             {!submitted ? (
               <>
                 <h2>Send Me a Message</h2>
-                <Form name="contact" action="https://getform.io/f/aqoowkxa"   method="POST" onSubmit={handleSubmit}>
-                  <input type="hidden" name="form-name" value="contact" />
-                  <Form.Group controlId="formName">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" name="name" placeholder="Your Name" />
-                  </Form.Group>
+                <Form name="contact" action="https://getform.io/f/aqoowkxa" method="POST" onSubmit={handleSubmit}>
+  <input type="hidden" name="form-name" value="contact" />
+  
+  <Form.Group controlId="formName">
+    <Form.Label>Name</Form.Label>
+    <Form.Control 
+      type="text" 
+      name="name" 
+      placeholder="Your Name" 
+      required 
+    />
+  </Form.Group>
 
-                  <Form.Group controlId="formEmail">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" name="email" placeholder="Your Email" />
-                  </Form.Group>
+  <Form.Group controlId="formEmail">
+    <Form.Label>Email</Form.Label>
+    <Form.Control 
+      type="email" 
+      name="email" 
+      placeholder="Your Email" 
+      required 
+    />
+  </Form.Group>
 
-                  <Form.Group controlId="formMessage">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} name="message" placeholder="Your Message" />
-                  </Form.Group>
+  <Form.Group controlId="formMessage">
+    <Form.Label>Message</Form.Label>
+    <Form.Control 
+      as="textarea" 
+      rows={3} 
+      name="message" 
+      placeholder="Your Message" 
+      required 
+    />
+  </Form.Group>
 
-                  <Button variant="primary" type="submit" style={{ marginTop: "10px" }}>
-                    Submit
-                  </Button>
-                </Form>
+  <Button variant="primary" type="submit" style={{ marginTop: "10px" }}>
+    Submit
+  </Button>
+</Form>
+
               </>
             ) : (
               <div className="thank-you-message">
