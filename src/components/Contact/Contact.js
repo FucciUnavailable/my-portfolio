@@ -8,12 +8,35 @@ import useWindowSize from "react-use/lib/useWindowSize";
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [result, setResult] = useState(""); // Define result state to store form submission result
   const { width, height } = useWindowSize();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     setSubmitted(true);
-    // You can add your form submission logic here (e.g., send form data)
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "cb32de7c-488b-467c-8385-637d6486b0d1");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Form Submitted Successfully!"); // Set result message on success
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message); // Set result message on error
+      }
+    } catch (error) {
+      console.error("Form submission error", error);
+      setResult("An error occurred while submitting the form."); // Handle network error
+    }
   };
 
   return (
@@ -51,50 +74,51 @@ function Contact() {
             {!submitted ? (
               <>
                 <h2>Send Me a Message</h2>
-                <Form name="contact" action="https://getform.io/f/aqoowkxa" method="POST" onSubmit={handleSubmit}>
-  <input type="hidden" name="personal-portfolio" value="contact" />
-  
-  <Form.Group controlId="formName">
-    <Form.Label>Name</Form.Label>
-    <Form.Control 
-      type="text" 
-      name="name" 
-      placeholder="Your Name" 
-      required 
-    />
-  </Form.Group>
+                <Form method="POST" onSubmit={handleSubmit}>
+                  <input type="hidden" name="personal-portfolio" value="contact" />
 
-  <Form.Group controlId="formEmail">
-    <Form.Label>Email</Form.Label>
-    <Form.Control 
-      type="email" 
-      name="email" 
-      placeholder="Your Email" 
-      required 
-    />
-  </Form.Group>
+                  <Form.Group controlId="formName">
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </Form.Group>
 
-  <Form.Group controlId="formMessage">
-    <Form.Label>Message</Form.Label>
-    <Form.Control 
-      as="textarea" 
-      rows={3} 
-      name="message" 
-      placeholder="Your Message" 
-      required 
-    />
-  </Form.Group>
+                  <Form.Group controlId="formEmail">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control
+                      type="email"
+                      name="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </Form.Group>
 
-  <Button variant="primary" type="submit" style={{ marginTop: "10px" }}>
-    Submit
-  </Button>
-</Form>
+                  <Form.Group controlId="formMessage">
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control
+                      as="textarea"
+                      rows={3}
+                      name="message"
+                      placeholder="Your Message"
+                      required
+                    />
+                  </Form.Group>
 
+                  <Button variant="primary" type="submit" style={{ marginTop: "10px" }}>
+                    Submit
+                  </Button>
+                </Form>
               </>
             ) : (
               <div className="thank-you-message">
                 <h2>Thank you for contacting me!</h2>
                 <p>I'll respond to your message as soon as possible.</p>
+                {/* Display the result message here */}
+                <p>{result}</p> {/* This will display the result */}
               </div>
             )}
           </Col>
