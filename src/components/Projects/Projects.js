@@ -7,6 +7,8 @@ import katze from "../../Assets/Projects/katze.png";
 import proxishop from "../../Assets/Projects/proxishop.png";
 import d3 from "../../Assets/Projects/d3.png";
 import converter from "../../Assets/Projects/converter.png";
+import soduku from "../../Assets/Projects/sudoku.png";
+
 
 
 
@@ -72,6 +74,16 @@ function Projects() {
               description="This Metric Converter project allows users to easily convert between different units of measurement, such as length (miles to kilometers), volume (gallons to liters), weight (pounds to kilograms), and more. The application provides both a simple user interface for manual conversion and an API endpoint that handles conversion requests programmatically."
               ghLink="https://github.com/FucciUnavailable/metric-converter-chai"
               demoLink="https://metric-imperial-converter.freecodecamp.rocks/"              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={soduku}
+              isBlog={false}
+              title="Soduku Solver"
+              description="Soduku solver with nice UI, wrote the logic from scratch and used chai for testing"              
+              ghLink="https://github.com/FucciUnavailable/sudoku-solver"
+              demoLink="https://3000-freecodecam-boilerplate-5brkg1ihfje.ws-us117.gitpod.io"              
             />
           </Col>
         </Row>
