@@ -8,6 +8,12 @@ import proxishop from "../../Assets/Projects/proxishop.png";
 import d3 from "../../Assets/Projects/d3.png";
 import converter from "../../Assets/Projects/converter.png";
 import soduku from "../../Assets/Projects/sudoku.png";
+import SQL from "../../Assets/Projects/SQL.png";
+import tennis from "../../Assets/Projects/tennis.png";
+import apexpainting from "../../Assets/Projects/apexpainting.png";
+import portfolio from "../../Assets/Projects/portfolio.png";
+
+
 
 
 
@@ -37,23 +43,22 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={proxishop}
-              isBlog={false}
-              title="ProxiShop"
-              description="Your Little neighborhood TRADE&SHOP App. allows people to create an account and a wallet."
-              ghLink="https://github.com/FucciUnavailable/ProxiPal2"
-              demoLink="https://www.youtube.com/watch?v=scTiQtTsdno"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={game}
               isBlog={false}
               title="Jeopardy Fighter"
               description="A Fighting game I developed using canvas with AI Logic and a twist inspired by the show JEOPARDY where you answer questions and either gain health or lose it!"
               ghLink="https://github.com/FucciUnavailable/JeopardyFighter"
               demoLink="https://fucciunavailable.github.io/JeopardyFighter/"              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={portfolio}
+              isBlog={false}
+              title="Personal Portfolio"
+              description="Personal Portfolio using React, various libraris and a functional API for form service, github for managament and vercel for deployment."
+              ghLink="https://github.com/FucciUnavailable/my-portfolio"
+              demoLink="https://mohamed-akacha.vercel.app/"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -68,12 +73,52 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={apexpainting}
+              isBlog={false}
+              title="Painting Company"
+              description="A user friendly and modern website for a local painting company Apex Painting."
+              ghLink="https://github.com/FucciUnavailable/Painting-Company"
+              demoLink="https://fucciunavailable.github.io/Painting-Company/"              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tennis}
+              isBlog={false}
+              title="Tennis Website with link to main tunisian company"
+              description="A front-end project for a Tunisian Tennis Platform I created from scratch using various methods for styling and enforcing a user friendly experience."
+              ghLink="https://github.com/FucciUnavailable/Painting-Company"
+              demoLink="https://amynnbrah.github.io/TennisProject/"              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={SQL}
+              isBlog={false}
+              title="PSQL + bash scripting projects"
+              description="This bundle showcases a collection of SQL projects designed to highlight advanced database management and query optimization skills. Coupled with bash scripting for creating stores and data within the PSQL databases."
+              ghLink="https://github.com/FucciUnavailable/SQL-Projects-SHELL/tree/main"
+                         
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={converter}
               isBlog={false}
               title="Metric/Imperial converter"
               description="This Metric Converter project allows users to easily convert between different units of measurement, such as length (miles to kilometers), volume (gallons to liters), weight (pounds to kilograms), and more. The application provides both a simple user interface for manual conversion and an API endpoint that handles conversion requests programmatically."
               ghLink="https://github.com/FucciUnavailable/metric-converter-chai"
               demoLink="https://metric-imperial-converter.freecodecamp.rocks/"              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={proxishop}
+              isBlog={false}
+              title="ProxiShop"
+              description="Your Little neighborhood TRADE&SHOP App. allows people to create an account and a wallet."
+              ghLink="https://github.com/FucciUnavailable/ProxiPal2"
+              demoLink="https://www.youtube.com/watch?v=scTiQtTsdno"
             />
           </Col>
           <Col md={4} className="project-card">
