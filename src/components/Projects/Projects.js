@@ -12,6 +12,8 @@ import SQL from "../../Assets/Projects/SQL.png";
 import tennis from "../../Assets/Projects/tennis.png";
 import apexpainting from "../../Assets/Projects/apexpainting.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
+import microservices from "../../Assets/Projects/microservices.png";
+
 
 
 
@@ -99,6 +101,16 @@ function Projects() {
               description="This bundle showcases a collection of SQL projects designed to highlight advanced database management and query optimization skills. Coupled with bash scripting for creating stores and data within the PSQL databases."
               ghLink="https://github.com/FucciUnavailable/SQL-Projects-SHELL/tree/main"
                          
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={microservices}
+              isBlog={false}
+              title="RESTful API MicroServices"
+              description="Different microservices created using express/mongodb/nodejs, multer and other libraries handled with git. "
+              ghLink="https://github.com/FucciUnavailable/Little-NodeJs-MongoDb-Projects"
+
             />
           </Col>
           <Col md={4} className="project-card">
