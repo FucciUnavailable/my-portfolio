@@ -13,6 +13,7 @@ import tennis from "../../Assets/Projects/tennis.png";
 import apexpainting from "../../Assets/Projects/apexpainting.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import microservices from "../../Assets/Projects/microservices.png";
+import jsprojects from "../../Assets/Projects/jsprojects.png"
 
 
 
@@ -61,6 +62,16 @@ function Projects() {
               description="Personal Portfolio using React, various libraris and a functional API for form service, github for managament and vercel for deployment."
               ghLink="https://github.com/FucciUnavailable/my-portfolio"
               demoLink="https://mohamed-akacha.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={jsprojects}
+              isBlog={false}
+              title="Front-end Javascript Projects"
+              description="A bundle of Javascript/React projects: Markup-Up React, Calculator, Drum-Machine, Pomodoro-Timer"
+              ghLink="https://codepen.io/collection/JYGGyN"
+              demoLink="https://codepen.io/collection/JYGGyN"              
             />
           </Col>
           <Col md={4} className="project-card">
