@@ -39,7 +39,7 @@ function Home2() {
               <b className="purple">Docker, Linux, and system design.</b>
               <br />
               <br />
-              In my free time, I like to contribute to open-source projects and build applications that make a difference.
+              In my free time, I like to contribute to open-source projects and build applications as well as muscles that make a difference.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
