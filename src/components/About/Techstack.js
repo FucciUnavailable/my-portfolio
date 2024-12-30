@@ -15,7 +15,8 @@ import {
   SiFirebase,
   SiPostgresql,
   SiChai,
-  SiDocker
+  SiDocker,
+  SiPostman
 } from "react-icons/si";
 
 
@@ -43,6 +44,9 @@ function Techstack() {
       
       <Col xs={4} md={2} className="tech-icons">
         <SiD3Dotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPostman />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
