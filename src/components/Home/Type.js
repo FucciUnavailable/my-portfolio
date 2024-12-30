@@ -6,17 +6,27 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Avid Learner",
           "Software Developer",
-          "Full-Stack",
-          "MERN Stack Developer",
-          "Open Source Contributor",
           "Father to two cats",
-          "One of them is Orange"
+          "One of them is <span style='color: black;'>Black</span>",
+          "I trained him to play dead",
+          "He's better at it than I expected",
+          "The other cat is an aspiring <span style='color: orange;'>MMA Fighter</span>",
+          "Currently practicing on my leg",
+          "Excuse me while I tap out—",
+          "Okay, I'm back. No hard feelings, right?",
+          "Oh, and I code stuff too",
+          "Sometimes even on purpose",
+          "Wait, why am I looping this?",
+          "Oh yeah, it's because I'm a",
+
+
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 70,
+        deleteSpeed: 20,
+        typeSpeed: 70, // Add this for faster typing
+
       }}
     />
   );
