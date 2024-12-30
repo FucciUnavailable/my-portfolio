@@ -14,6 +14,7 @@ import apexpainting from "../../Assets/Projects/apexpainting.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import microservices from "../../Assets/Projects/microservices.png";
 import jsprojects from "../../Assets/Projects/jsprojects.png"
+import ecommerce from "../../Assets/Projects/ecommerce.png"
 
 
 
@@ -33,6 +34,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ecommerce}
+              isBlog={false}
+              title="E-Commerce Website"
+              description="E-Commerce Website built from scratch using React and Redux for the front-end, Node.js and Express for the back-end, and MongoDB for the database. The website includes features such as user authentication, product search, product filtering, product sorting, pagination, and payment processing using the Stripe API."
+              ghLink="https://github.com/FucciUnavailable/fucci-commerce"
+              demoLink="https://github.com/FucciUnavailable/fucci-commerce"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={katze}
