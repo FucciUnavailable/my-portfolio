@@ -8,7 +8,7 @@ function Type() {
         strings: [
           "Software Developer",
           "Father to two cats",
-          "One of them is <span style='color: black;'>Black</span>",
+          "One of them is <span style='color: gray;'>Black</span>",
           "I trained him to play dead",
           "He's better at it than I expected",
           "The other cat is an aspiring <span style='color: orange;'>MMA Fighter</span>",

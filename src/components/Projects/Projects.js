@@ -44,7 +44,7 @@ function Projects() {
               title="E-Commerce Website"
               description="E-Commerce Website built from scratch using React and Redux for the front-end, Node.js and Express for the back-end, and MongoDB for the database. The website includes features such as user authentication, product search, product filtering, product sorting, pagination, and payment processing using the Stripe API."
               ghLink="https://github.com/FucciUnavailable/fucci-commerce"
-              demoLink="https://github.com/FucciUnavailable/fucci-commerce"
+              demoLink="https://youtu.be/TUkairByAPQ"
             />
           </Col>
           <Col md={4} className="project-card">
