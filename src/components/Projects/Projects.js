@@ -15,7 +15,7 @@ import portfolio from "../../Assets/Projects/portfolio.png";
 import microservices from "../../Assets/Projects/microservices.png";
 import jsprojects from "../../Assets/Projects/jsprojects.png"
 import ecommerce from "../../Assets/Projects/ecommerce.png"
-
+import translator from "../../Assets/Projects/translator.png"
 
 
 
@@ -162,10 +162,20 @@ function Projects() {
             <ProjectCard
               imgPath={soduku}
               isBlog={false}
-              title="Soduku Solver"
-              description="Soduku solver with nice UI, wrote the logic from scratch and used chai for testing"              
+              title="Sudoku Solver"
+              description="Sudoku solver with nice UI, wrote the logic from scratch and used chai for testing"              
               ghLink="https://github.com/FucciUnavailable/sudoku-solver"
               demoLink="https://3000-freecodecam-boilerplate-5brkg1ihfje.ws-us117.gitpod.io"              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={translator}
+              isBlog={false}
+              title="American-British Translator"
+              description="Translator built using Node.js and tested with Mocha / Chai"              
+              ghLink="https://github.com/FucciUnavailable/translator"
+                        
             />
           </Col>
         </Row>
