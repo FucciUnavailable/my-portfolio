@@ -878,3 +878,48 @@ button:focus {
 }
 
 
+.tag-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.tag-buttons button {
+  padding: 8px 16px;
+  background-color: #552955;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  z-index: 100;
+}
+
+.tag-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.tag-buttons button.active {
+  background-color: #004085;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adds space between tags */
+  margin-top: 10px;
+}
+
+.tag {
+  background-color: #dcd0ff; /* Soft purple background */
+  color: #4b0082; /* Text color (Indigo) */
+  border-radius: 20px; /* Oval shape */
+  padding: 5px 15px; /* Padding for the oval look */
+  font-size: 14px; /* Adjust font size */
+  font-weight: 500; /* Slightly bold text */
+  white-space: nowrap; /* Prevent wrapping of tag text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+}
