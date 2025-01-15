@@ -7,6 +7,7 @@ import Particle from "../Particle";
 // Import project images
 import game from "../../Assets/Projects/game.png";
 import katze from "../../Assets/Projects/katze.png";
+import ecommerce from "../../Assets/Projects/ecommerce.png";
 import proxishop from "../../Assets/Projects/proxishop.png";
 import d3 from "../../Assets/Projects/d3.png";
 import converter from "../../Assets/Projects/converter.png";
@@ -17,7 +18,7 @@ import apexpainting from "../../Assets/Projects/apexpainting.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import microservices from "../../Assets/Projects/microservices.png";
 import jsprojects from "../../Assets/Projects/jsprojects.png";
-import ecommerce from "../../Assets/Projects/ecommerce.png";
+
 import translator from "../../Assets/Projects/translator.png";
 
 function Projects() {
@@ -30,7 +31,7 @@ function Projects() {
       title: "E-Commerce Website",
       description: "E-Commerce Website built using React, Redux, Node.js, and MongoDB.",
       ghLink: "https://github.com/FucciUnavailable/fucci-commerce",
-      demoLink: "https://main.d74b3x7qoycck.amplifyapp.com/",
+      demoLink: "https://fucci-commerce-frontend.vercel.app/",
       tags: ["Full Stack"],
     },
     {
@@ -49,14 +50,14 @@ function Projects() {
       demoLink: "https://fucciunavailable.github.io/JeopardyFighter/",
       tags: ["Front End", "JavaScript"],
      },
-    // {
-    //   imgPath: portfolio,
-    //   title: "Personal Portfolio",
-    //   description:"Personal Portfolio using React, various libraris and a functional API for form service, github for managament and vercel for deployment.",
-    //   ghLink: "https://github.com/FucciUnavailable/my-portfolio",
-    //   demoLink: "https://mohamed-akacha.vercel.app/",
-    //   tags: ["Front End", "JavaScript"],
-    // },
+    {
+      imgPath: portfolio,
+      title: "Personal Portfolio",
+      description:"Personal Portfolio using React, various libraris and a functional API for form service, github for managament and vercel for deployment.",
+      ghLink: "https://github.com/FucciUnavailable/my-portfolio",
+      demoLink: "https://mohamed-akacha.vercel.app/",
+      tags: ["Front End", "JavaScript"],
+    },
   ];
 
   // Function to sort projects based on selected criteria (title or tags)
