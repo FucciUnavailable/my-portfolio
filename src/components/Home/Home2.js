@@ -16,10 +16,10 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              WHO <span className="purple"> AM </span> I <span className="purple">?</span>
             </h1>
             <p className="home-about-body">
-              I'm a passionate programmer with a love for learning and solving problems.
+              I'm a passionate programmer, with a love for learning and solving problems.
               <br />
               <br />I have experience in programming languages like
               <i>
@@ -77,7 +77,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/amine-akacha-a97240340/"
+                  href="https://www.linkedin.com/in/amine-akacha/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
