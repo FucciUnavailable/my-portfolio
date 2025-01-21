@@ -9,7 +9,7 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hello, I am <span className="purple">Amine Akacha (Fucci Online) </span>
-            <span className="purple">Tunisian Problem Solver</span> studied in <span className="purple">France </span>and currently living in the <span className="purple">USA</span>.
+            from <span className="purple"> Toulouse, France.</span>
             <br />
             I am currently working as a Freelance Software Developer
             <br />
