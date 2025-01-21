@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Dropdown } from "react-bootstrap";
+import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCards"; // Assuming your ProjectCard component is as defined before
 import Particle from "../Particle";
 
-// Import project images
 // Import project images
 import game from "../../Assets/Projects/game.png";
 import katze from "../../Assets/Projects/katze.png";
@@ -18,7 +18,6 @@ import apexpainting from "../../Assets/Projects/apexpainting.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import microservices from "../../Assets/Projects/microservices.png";
 import jsprojects from "../../Assets/Projects/jsprojects.png";
-
 import translator from "../../Assets/Projects/translator.png";
 
 function Projects() {
@@ -45,55 +44,68 @@ function Projects() {
     {
       imgPath: game,
       title: "Jeopardy Fighter",
-      description:"A Fighting game I developed using canvas with AI Logic and a twist inspired by the show JEOPARDY where you answer questions and either gain health or lose it!",
+      description: "A Fighting game I developed using canvas with AI Logic inspired by JEOPARDY.",
       ghLink: "https://github.com/FucciUnavailable/JeopardyFighter",
       demoLink: "https://fucciunavailable.github.io/JeopardyFighter/",
       tags: ["Front End", "JavaScript"],
-     },
+    },
     {
       imgPath: portfolio,
       title: "Personal Portfolio",
-      description:"Personal Portfolio using React, various libraris and a functional API for form service, github for managament and vercel for deployment.",
+      description: "Personal Portfolio using React, various libraries, and a functional API for form service.",
       ghLink: "https://github.com/FucciUnavailable/my-portfolio",
       demoLink: "https://mohamed-akacha.vercel.app/",
       tags: ["Front End", "JavaScript"],
     },
   ];
 
-  // Function to sort projects based on selected criteria (title or tags)
- 
-
-  // Function to filter projects by the selected tag
   const filterProjects = (tag) => {
     setSelectedTag(tag); // Set the selected tag
   };
 
-  // Filtered projects based on the selected tag
   const filteredProjects = selectedTag
     ? projectData.filter((project) => project.tags.includes(selectedTag))
     : projectData;
 
-  // Get unique tags from all projects
   const allTags = [...new Set(projectData.flatMap((project) => project.tags))];
-
 
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Projects </strong>
-        </h1>
-        <p style={{ color: "white" }}>
+        <motion.h1
+          className="project-heading"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          My Recent <strong className="purple">Projects</strong>
+        </motion.h1>
+
+        <motion.p
+          style={{ color: "white" }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
           Please note: Most of these projects are part of a learning process. I am constantly exploring new problems to tackle on this long journey.
-        </p>
-        <p style={{ color: "purple" }}>
+        </motion.p>
+
+        <motion.p
+          style={{ color: "purple" }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.7 }}
+          viewport={{ once: true }}
+        >
           I am always looking for new projects to work on, so if you have any ideas or projects you would like to collaborate on, please feel free to reach out to me.
-        </p>
-        
-            {/* Tag Filter Dropdown */}
+        </motion.p>
+
+        {/* Tag Filter Dropdown */}
         <Dropdown style={{ marginBottom: "20px", zIndex: 10 }}>
-          <Dropdown.Toggle variant="outline-primary" id="tag-filter-dropdown">
+          <Dropdown.Toggle variant="outline-primary" id="tag-filter-dropdown" style={{ color: "purple" }} >
             {selectedTag || "All Projects"}
           </Dropdown.Toggle>
 
@@ -109,21 +121,26 @@ function Projects() {
           </Dropdown.Menu>
         </Dropdown>
 
-
-
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {/* Render filtered and sorted projects */}
           {filteredProjects.map((project, index) => (
             <Col md={4} className="project-card" key={index}>
-              <ProjectCard
-                imgPath={project.imgPath}
-                title={project.title}
-                description={project.description}
-                ghLink={project.ghLink}
-                demoLink={project.demoLink}
-                tags={project.tags}
-                isBlog={false} // Adjust as necessary
-              />
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+                viewport={{ once: true }}
+              >
+                <ProjectCard
+                  imgPath={project.imgPath}
+                  title={project.title}
+                  description={project.description}
+                  ghLink={project.ghLink}
+                  demoLink={project.demoLink}
+                  tags={project.tags}
+                  isBlog={false}
+                />
+              </motion.div>
             </Col>
           ))}
         </Row>
