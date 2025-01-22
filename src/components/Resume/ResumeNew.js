@@ -1,54 +1,43 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import React, { useRef } from "react";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/fucci-cv-fullstack.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import useInView from "../../Hooks/useInView"; // Your custom hook
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
+  const buttonRef = useRef(null);
+  const isButtonInView = useInView(buttonRef);
 
   return (
-    <div>
-      <Container fluid className="resume-section">
-        <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
-
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
-      </Container>
+    <div
+      style={{
+        padding: "100px 0",
+        textAlign: "center",
+      }}
+    >
+      <div
+        ref={buttonRef}
+        style={{
+          opacity: isButtonInView ? 1 : 0,
+          transform: isButtonInView ? "scale(1)" : "scale(0.9)",
+          transition: "opacity 0.5s, transform 0.5s",
+          display: "inline-block",
+        }}
+      >
+        <Button
+          variant="primary"
+          href={pdf}
+          target="_blank"
+          style={{
+            maxWidth: "250px",
+            borderRadius: "50px",
+            padding: "10px 20px",
+            fontSize: "18px",
+          }}
+        >
+          <AiOutlineDownload /> &nbsp;Download CV
+        </Button>
+      </div>
     </div>
   );
 }

@@ -12,6 +12,7 @@ html {
   );
 
   --imp-text-color: #c770f0;
+  scroll-behavior: smooth;
 }
 
 .purple {

@@ -16,31 +16,8 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              THANK  <span className="purple"> YOU </span> FOR VISITING
             </h1>
-            <p className="home-about-body">
-              I'm a passionate programmer with a love for learning and solving problems.
-              <br />
-              <br />I have experience in programming languages like
-              <i>
-                <b className="purple"> JavaScript, Python, and Java.</b>
-              </i>
-              <br />
-              <br />
-              My areas of interest include developing 
-              <i>
-                <b className="purple"> web applications, designing scalable backend systems, </b>
-              </i>
-              and creating applications with modern frameworks.
-              <br />
-              <br />
-              I also enjoy working with technologies like{" "}
-              <b className="purple">Node.js, React.js, Cloud Systems, PSQL, Redis and MongoDB</b>, and I’m exploring areas like{" "}
-              <b className="purple">Docker, Linux, and system design.</b>
-              <br />
-              <br />
-              In my free time, I like to contribute to open-source projects and build applications as well as muscles that make a difference.
-            </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
