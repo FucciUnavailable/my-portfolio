@@ -18,6 +18,10 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               THANK  <span className="purple"> YOU </span> FOR VISITING
             </h1>
+            <h2>Tech Tip of the Day</h2>
+                <p>
+                  Did you know? The first computer virus, known as "Creeper," was created in 1971. It was not malicious but rather a self-replicating program that displayed a message: "I'm the Creeper, catch me if you can!"
+                </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>

@@ -14,6 +14,8 @@ function Github() {
         blockMargin={5}
         color="#c084f5"
         fontSize={16}
+        className="github-calendar" // Custom class
+
       />
     </Row>
   );

@@ -8,6 +8,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Contact from "./components/Contact/Contact";
+import ScrollToTopButton from "./components/Scroll/ScrollToTopButton";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -35,6 +36,8 @@ function App() {
       <div id="resume"><Resume /></div>
       <div id="home2"><Home2 /></div>
       <Footer />
+      <ScrollToTopButton />
+
     </div>
   );
 }

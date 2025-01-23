@@ -924,3 +924,61 @@ button:focus {
   white-space: nowrap; /* Prevent wrapping of tag text */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
 }
+
+
+/* Scroll to top button */
+/* Scroll to top button */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #2c3e50, #4b2e83, #8e44ad); /* Dark purple shades */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px; /* Smaller button */
+  font-size: 18px; /* Smaller font */
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.2); /* Soft glow */
+  display: block; /* Hidden by default */
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  backdrop-filter: blur(6px); /* Adding a blur effect behind */
+}
+
+/* Glowing and mystic effect on hover */
+.scroll-to-top-btn:hover {
+  background: linear-gradient(135deg, #8e44ad, #4b2e83, #2c3e50); /* Brighter purples on hover */
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.3); /* Stronger glow on hover */
+  transform: scale(1.1); /* Button grows on hover */
+  animation: pulse 1s infinite; /* Pulsing animation */
+}
+
+/* Glow animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 50px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 70px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 50px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* When the button is visible */
+.scroll-to-top-btn.show {
+  display: block;
+  animation: fadeIn 0.5s ease-out; /* Smooth fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
