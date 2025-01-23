@@ -38,12 +38,14 @@ function About() {
   const sectionRef2 = React.useRef(null);
   const sectionRef3 = React.useRef(null);
   const sectionRef4 = React.useRef(null);
+  const sectionRef5 = React.useRef(null);
 
   // Get inView state for each section
   const inView1 = useInView(sectionRef1);
   const inView2 = useInView(sectionRef2);
   const inView3 = useInView(sectionRef3);
   const inView4 = useInView(sectionRef4);
+  const inView5 = useInView(sectionRef5);
 
   // Animation logic for each section
   const sectionAnimation = (inView) => ({
@@ -104,20 +106,22 @@ function About() {
           </h1>
           <Techstack />
         </motion.div>
-                    {/* Section: Professional Languages */}
+
+        {/* Section: Programming Languages */}
         <motion.div
-          {...sectionAnimation(inView2)}
-          ref={sectionRef2}
+          {...sectionAnimation(inView3)}
+          ref={sectionRef3}
         >
           <h1 className="project-heading">
             Programming <strong className="purple">Languages </strong>
           </h1>
           <Languages />
         </motion.div>
+
         {/* Section: Tools I use */}
         <motion.div
-          {...sectionAnimation(inView3)}
-          ref={sectionRef3}
+          {...sectionAnimation(inView4)}
+          ref={sectionRef4}
         >
           <h1 className="project-heading">
             <strong className="purple">Tools</strong> I use
@@ -127,8 +131,8 @@ function About() {
 
         {/* Section: Github */}
         <motion.div
-          {...sectionAnimation(inView4)}
-          ref={sectionRef4}
+          {...sectionAnimation(inView5)}
+          ref={sectionRef5}
         >
           <Github />
         </motion.div>

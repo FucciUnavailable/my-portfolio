@@ -11,7 +11,7 @@ function ResumeNew() {
   return (
     <div
       style={{
-        padding: "100px 0",
+        padding: "10px",
         textAlign: "center",
       }}
     >
