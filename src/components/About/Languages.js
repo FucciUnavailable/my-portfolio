@@ -2,26 +2,35 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { Tooltip, OverlayTrigger } from "react-bootstrap"; // Tooltip for hover effects
-import { DiGit, DiLinux } from "react-icons/di";
-import { SiFirebase, SiDocker, SiPostman } from "react-icons/si";
-import { FaJenkins } from "react-icons/fa";
-import { FaAws } from "react-icons/fa";
-import { VscAzure } from "react-icons/vsc";
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejs,
+  DiMongodb,
+  DiPython,
+  DiJava,
+  DiDjango,
+} from "react-icons/di";
+import { SiD3Dotjs, SiPostgresql, SiChai, SiDotnet } from "react-icons/si";
+import { FaAngular } from "react-icons/fa";
 
 // Icon data with names
 const techStack = [
-  { icon: <SiDocker />, name: "Docker" },
-  { icon: <FaJenkins />, name: "Jenkins" },
-  { icon: <FaAws />, name: "AWS" },
-  { icon: <VscAzure />, name: "Azure" },
-  { icon: <SiPostman />, name: "Postman" },
-  { icon: <DiGit />, name: "Git" },
-  { icon: <SiFirebase />, name: "Firebase" },
-  { icon: <DiLinux />, name: "Linux" },
-
+  { icon: <DiJavascript1 />, name: "JavaScript" },
+  { icon: <SiDotnet />, name: ".NET" },
+  { icon: <DiNodejs />, name: "Node.js" },
+  { icon: <DiReact />, name: "React" },
+  { icon: <FaAngular />, name: "Angular" },
+  { icon: <DiDjango />, name: "Django" },
+  { icon: <DiMongodb />, name: "MongoDB" },
+  { icon: <SiD3Dotjs />, name: "D3.js" },
+  { icon: <SiChai />, name: "Chai" },
+  { icon: <SiPostgresql />, name: "PostgreSQL" },
+  { icon: <DiPython />, name: "Python" },
+  { icon: <DiJava />, name: "Java" },
 ];
 
-function Techstack() {
+function Languages() {
   // Framer Motion Animation Variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -69,4 +78,4 @@ function Techstack() {
   );
 }
 
-export default Techstack;
+export default Languages;

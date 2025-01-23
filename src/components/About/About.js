@@ -6,6 +6,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import Languages from "./Languages";
 import { motion } from "framer-motion";
 
 // Intersection Observer Hook to track when an element is in the viewport
@@ -103,7 +104,16 @@ function About() {
           </h1>
           <Techstack />
         </motion.div>
-
+                    {/* Section: Professional Languages */}
+        <motion.div
+          {...sectionAnimation(inView2)}
+          ref={sectionRef2}
+        >
+          <h1 className="project-heading">
+            Programming <strong className="purple">Languages </strong>
+          </h1>
+          <Languages />
+        </motion.div>
         {/* Section: Tools I use */}
         <motion.div
           {...sectionAnimation(inView3)}

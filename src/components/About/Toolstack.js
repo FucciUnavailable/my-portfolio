@@ -11,8 +11,10 @@ import {
   SiMacos,
 } from "react-icons/si";
 
+
 // Toolstack data
 const tools = [
+
   { icon: <SiMacos />, name: "macOS" },
   { icon: <SiVisualstudiocode />, name: "Visual Studio Code" },
   { icon: <SiSlack />, name: "Slack" },
