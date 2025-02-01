@@ -71,7 +71,7 @@ npm run deploy
 
 ## 🌐 Deployment
 This portfolio is deployed using [Vercel]. You can view it live at:
-[https://mohamed-akacha.vercel.app/](https://mohamed-akacha.vercel.app/)
+[https://amine-akacha.vercel.app/](https://mohamed-akacha.vercel.app/)
 
 ---
 
