@@ -1,4 +1,4 @@
-# Portfolio
+8# Portfolio
 
 Welcome to my portfolio repository! This project showcases my work, skills, and experiences, built using React and a variety of modern tools and libraries.
 
@@ -104,3 +104,4 @@ Special thanks to all the open-source projects and libraries used in this portfo
 ## 📨 Contact
 If you have any questions or suggestions, feel free to contact me via GitHub or email:
 - GitHub: [<FucciUnavailable>](https://github.com/FucciUnavailable/)
+or just go to the website and fill out the form. I'll answer ASAP 
