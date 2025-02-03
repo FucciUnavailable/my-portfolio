@@ -8,7 +8,7 @@ function AboutCard() {
     <Card.Body>
       <blockquote className="blockquote mb-0">
         <p style={{ textAlign: "justify" }}>
-          Hi, I’m <span className="purple">Amine Akacha</span>, a Freelance Software Developer based in the <span className="purple">USA.</span>.
+          Hi, I’m <span className="purple">Amine Akacha</span>, a Software Engineer based in the <span className="purple">USA.</span>.
           With a strong foundation in advanced mathematics and discrete structures, I specialize in building efficient and scalable solutions.
           <br />
           <br />
